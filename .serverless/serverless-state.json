@@ -1,8 +1,8 @@
 {
   "service": {
-    "service": "PECE_Doctor_Signup",
+    "service": "lampconsulting_landing_page",
     "serviceObject": {
-      "name": "PECE_Doctor_Signup"
+      "name": "lampconsulting_landing_page"
     },
     "provider": {
       "stage": "dev",
@@ -75,7 +75,7 @@
           "ApiLogGroup": {
             "Type": "AWS::Logs::LogGroup",
             "Properties": {
-              "LogGroupName": "/aws/lambda/PECE_Doctor_Signup-dev-api"
+              "LogGroupName": "/aws/lambda/lampconsulting_landing_page-dev-api"
             }
           },
           "IamRoleLambdaExecution": {
@@ -104,7 +104,7 @@
                       "-",
                       [
                         "dev",
-                        "PECE_Doctor_Signup",
+                        "lampconsulting_landing_page",
                         "lambda"
                       ]
                     ]
@@ -119,7 +119,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/PECE_Doctor_Signup-dev*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/lampconsulting_landing_page-dev*:*"
                           }
                         ]
                       },
@@ -130,7 +130,7 @@
                         ],
                         "Resource": [
                           {
-                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/PECE_Doctor_Signup-dev*:*:*"
+                            "Fn::Sub": "arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/lampconsulting_landing_page-dev*:*:*"
                           }
                         ]
                       }
@@ -143,7 +143,7 @@
                 "Fn::Join": [
                   "-",
                   [
-                    "PECE_Doctor_Signup",
+                    "lampconsulting_landing_page",
                     "dev",
                     {
                       "Ref": "AWS::Region"
@@ -161,9 +161,9 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/PECE_Doctor_Signup/dev/1587451630914-2020-04-21T06:47:10.914Z/PECE_Doctor_Signup.zip"
+                "S3Key": "serverless/lampconsulting_landing_page/dev/1587451630914-2020-04-21T06:47:10.914Z/lampconsulting_landing_page.zip"
               },
-              "FunctionName": "PECE_Doctor_Signup-dev-api",
+              "FunctionName": "lampconsulting_landing_page-dev-api",
               "Handler": "lambda.universal",
               "MemorySize": 192,
               "Role": {
@@ -193,7 +193,7 @@
           "ApiGatewayRestApi": {
             "Type": "AWS::ApiGateway::RestApi",
             "Properties": {
-              "Name": "dev-PECE_Doctor_Signup",
+              "Name": "dev-lampconsulting_landing_page",
               "EndpointConfiguration": {
                 "Types": [
                   "EDGE"
@@ -484,7 +484,7 @@
             "http": "ANY /"
           }
         ],
-        "name": "PECE_Doctor_Signup-dev-api",
+        "name": "lampconsulting_landing_page-dev-api",
         "package": {},
         "memory": 192,
         "timeout": 10,
@@ -494,10 +494,10 @@
     },
     "serviceFilename": "serverless.yml",
     "layers": {},
-    "artifact": "/home/influx/Documents/all_project/DNA/angular-bash/.serverless/PECE_Doctor_Signup.zip"
+    "artifact": "/home/influx/Documents/all_project/DNA/angular-bash/.serverless/lampconsulting_landing_page.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/PECE_Doctor_Signup/dev/1587451630914-2020-04-21T06:47:10.914Z",
-    "artifact": "PECE_Doctor_Signup.zip"
+    "artifactDirectoryName": "serverless/lampconsulting_landing_page/dev/1587451630914-2020-04-21T06:47:10.914Z",
+    "artifact": "lampconsulting_landing_page.zip"
   }
 }
