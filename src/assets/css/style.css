@@ -38,8 +38,14 @@
 
 @media (max-width: 1880px) {
   .b1 .imgbanner {left: 18px;}
+  .b1 {background-size: auto,auto 46%,auto,56% auto,auto,auto,46%!important;}
 }
+@media (max-width: 1840px) {
+.b1 {background-size: auto,42% 55%,auto,53% auto,auto,auto,46%!important;}
+}
+
 @media (max-width: 1800px) {
+.b1 {background-size: auto,42% 55%,auto 39%,61% auto,auto,auto 51%,46%!important;}
 .prefooterblock {background-position: -7% 100%, 110% 100%!important;background-size: auto 100%,auto 100%!important;}
 }
 @media (max-width: 1740px) {
@@ -47,7 +53,7 @@
   .b1 .imgbanner img:nth-child(1) {right: -45%;}
   .b1 .imgbanner img:nth-child(2) {width: 509px;}
   .b1 .m-c-t {font-size: 40px;line-height: 36px;}
-  .b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,auto,32%,auto,auto,auto,46%!important;}
+  .b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 55%,auto 39%,60% auto,auto,auto 57%,46%!important}
   .prefooterblock {background-position: -14% 100%,113% 100%!important;}
 }
 @media (max-width: 1600px) {
