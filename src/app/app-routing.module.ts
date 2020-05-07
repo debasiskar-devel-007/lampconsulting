@@ -1,8 +1,12 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [
+import { LamplandingComponent } from './component/lamplanding/lamplanding.component';
 
+const routes: Routes = [
+  { path: '', component: LamplandingComponent },
+
+  { path: 'landing', component: LamplandingComponent },
 ];
 
 @NgModule({

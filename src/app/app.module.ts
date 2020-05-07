@@ -10,10 +10,18 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
-import { DemoMaterialModule } from './material-module';
+import { DemoMaterialModule } from './modules/material-module';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { MetaModule, MetaLoader, MetaStaticLoader, PageTitlePositioning } from '@ngx-meta/core';
+
+// http-loader section
+import { LoaderService } from './services/loader.service';
+import { LoaderInterceptor } from './common/loader.interceptor';
+import { HttpLoaderComponent } from './common/http-loader/http-loader.component';
+
+import { LamplandingComponent } from './component/lamplanding/lamplanding.component';
+
 
 export function metaFactory(): MetaLoader {
   return new MetaStaticLoader({
@@ -36,7 +44,9 @@ export function metaFactory(): MetaLoader {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HttpLoaderComponent,
+    LamplandingComponent,
   ],
   imports: [
     DemoMaterialModule,
@@ -58,7 +68,8 @@ export function metaFactory(): MetaLoader {
     NgtUniversalModule,
   ],
   providers: [
-    CookieService,TestresolveService,ApiService
+    CookieService,TestresolveService,ApiService, LoaderService,
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   bootstrap: [AppComponent]
