@@ -13,7 +13,7 @@ declare var $:any;
 export class LamplandingComponent implements OnInit {
   
   
-  // loading: boolean;
+  loading: boolean=false;
   constructor(public router: Router) { 
     
     
@@ -23,7 +23,7 @@ export class LamplandingComponent implements OnInit {
 
     $("#parallaxwrapper").mousemove(function(e) {
       parallaxIt(e, ".parallax", -15);
-      parallaxIt(e, ".parallax>img", -5);
+      parallaxIt(e, ".parallax>img", -10);
     });
      
     function parallaxIt(e, target, movement) {
@@ -39,7 +39,7 @@ export class LamplandingComponent implements OnInit {
 
     $("#parallaxwrapper1").mousemove(function(e) {
       parallaxIt1(e, ".parallax1", -15);
-      parallaxIt1(e, ".parallax1>img", -5);
+      parallaxIt1(e, ".parallax1>img", -10);
     });
 
     function parallaxIt1(e, target, movement) {
@@ -55,7 +55,7 @@ export class LamplandingComponent implements OnInit {
 
     $("#parallaxwrapper2").mousemove(function(e) {
       parallaxIt1(e, ".parallax2", -15);
-      parallaxIt1(e, ".parallax2>img", -5);
+      parallaxIt1(e, ".parallax2>img", -10);
     });
 
     function parallaxIt2(e, target, movement) {
@@ -72,7 +72,7 @@ export class LamplandingComponent implements OnInit {
 
     $("#parallaxwrapper3").mousemove(function(e) {
       parallaxIt1(e, ".parallax3", -15);
-      parallaxIt1(e, ".parallax3>img", -5);
+      parallaxIt1(e, ".parallax3>img", -10);
     });
 
     function parallaxIt3(e, target, movement) {
