@@ -112,12 +112,12 @@
 .b2-content .imgmanwrapper {width: 40%;}
 }
 @media (max-width: 1240px) {
-.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,53% 44%,33%,72% 70%,auto,66%,54%!important;}
+.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,49% 41%,30% 44%,66% 70%,auto,63%,52%!important;}
 .b1 .imgbanner {width: 397px;}
 }
 
 @media (max-width: 1220px) {
-.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,53% 42%,33% 44%,72% 70%,auto,66%,54%!important;}
+.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,49% 41%,30% 44%,67% 70%,auto,63%,52%!important;}
 }
 
 @media (max-width: 1199px) {
