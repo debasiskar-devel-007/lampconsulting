@@ -235,6 +235,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 .infinityChrome div:after{animation:drop2 .8s linear infinite .4s}
 .infinityChrome div:nth-child(2){animation-delay:-2.3s}
 .infinityChrome div:nth-child(3){animation-delay:-4.6s}
+
 @keyframes moveSvg {
 0%{offset-distance:0}
 25%{background:#6c6ce5}
@@ -258,6 +259,14 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 0%{transform:translate(0,0) scale(0.9)}
 100%{transform:translate(32px,-8px) scale(0)}
 }
+
+.scroll-to-top{position:fixed;bottom:20px;right:30px;z-index:999999;border:none;outline:none;cursor:pointer;padding: 1px;display:block;opacity:0;transition:all .2s ease-in-out;    background-color: #cc4e63;
+  width: 30px !important;border-radius: 100% !important;height: 30px !important;color: #fff;border: 2px solid #cdcdcd}
+.show-scrollTop{opacity:1;transition:all .2s ease-in-out}
+.scroll-to-top .mat-icon{color: #fff;}
+
+
+
 @media (max-width: 1880px) {
 .clientbox .mainwrapper{width:96%;margin:0 auto;display:block}
 }
@@ -290,6 +299,7 @@ p {width: 100%;margin-top: 0 !important;}
 .contactinfo {flex-direction: column;}
 .contactinfo .mat-list-item {margin-bottom: 18px;}
 .contactinfo .mat-list-item:last-child {margin-bottom: 0;}
+.scroll-to-top {bottom: 75px;right: 16px;width: 40px;}
 }
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { gsap } from "gsap";
 
@@ -11,7 +11,8 @@ declare var $:any;
   styleUrls: ['./lamplanding.component.css']
 })
 export class LamplandingComponent implements OnInit {
-  
+
+  windowScrolled: boolean;
   
   loading: boolean=false;
   constructor(public router: Router) { 
@@ -86,6 +87,30 @@ export class LamplandingComponent implements OnInit {
       });
     }
 
+  }
+
+  @HostListener("window:scroll", [])
+
+  onWindowScroll() {
+      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+          this.windowScrolled = true;
+      }
+      else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+          this.windowScrolled = false;
+      }
+  }
+
+  scrollToTop() {
+    (function smoothscroll() {
+
+        var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (currentScroll > 0) {
+            window.requestAnimationFrame(smoothscroll);
+            window.scrollTo(0, currentScroll - (currentScroll / 8));
+        }
+
+    })();
   }
 
 }
