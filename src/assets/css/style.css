@@ -111,15 +111,11 @@
 .prefooterblock {background-image: none !important;min-height: auto;}
 .prefooterblock .mainwrapper {width: 96%;}
 .content-block .main-row-gen {-webkit-box-flex: 0;flex: 0 0 58%;padding-right: 5%;}
-}
-
-@media (max-width:991px) {
 .logowrapper {padding-top: 34px;text-align: center;}
 .b2-content .imgmanwrapper {width: 100%;margin: 0 auto;display: block;text-align: center; position: inherit;}
 .b1 .m-c-t br{display: none;}
 .b1-content {width: 100%;}
 }
-
 @media (max-width: 600px) {
 .b1-content {padding: 15px;width: 100% !important;}
 .b2-content .imgmanwrapper {width: 100%;position: inherit;bottom: 0;right: 0;}
