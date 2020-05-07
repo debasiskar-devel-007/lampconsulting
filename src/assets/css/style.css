@@ -56,24 +56,38 @@
   .b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 55%,auto 39%,60% auto,auto,auto 57%,46%!important}
   .prefooterblock {background-position: -14% 100%,113% 100%!important;}
 }
+
+@media (max-width: 1666px) {
+.b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 55%,auto 39%,60% auto,auto,auto 54%,46%!important;}
+}
+
 @media (max-width: 1600px) {
 .b1-content {width: 440px;margin-left: auto;margin-right: auto;}
 .b1 .m-c-subt {font-size: 20px;line-height: 26px;}
 .prefooterblock {background-position: -16% 100%, 117% 100%!important;background-size: auto 100%,auto 100%!important;}
+.b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 55%,auto 39%,63% auto,auto,auto 51%,46%!important;}
 }
+@media (max-width: 1560px) {
+.b1 {background-position: bottom right,top right,left,right bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 55%,auto 39%,62% auto,auto,auto 50%,46%!important;}
+}
+
 @media (max-width: 1540px) {
 .b1 .m-c-t {font-size: 36px;line-height: 36px;}
 .b1 .imgbanner {width: 460px;}
 .b1 .imgbanner img:nth-child(1) {right: -68%;}
-.b1 {background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,auto,32%,auto,auto,auto,52%!important;}
+.b1 {background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,42% 56%,auto 39%,62% auto,auto,auto 53%,46%!important;}
 .b1-content {padding-top: 12%;}
 }
+@media (max-width: 1500px) {
+.b1 {background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -15%,top left!important;background-size: auto,43% 57%,auto 43%,65% auto,auto,auto 50%,46%!important;}
+}
+
 @media (max-width: 1440px) {
-  .b1 {background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,auto,34%,auto,auto,auto,52%!important;}
+  .b1 {background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,43% 57%,auto 43%,65% auto,auto,auto 54%,50%!important;}
   .b1 .m-c-subt {font-size: 24px;}
   .b1 .m-c-t {font-size: 34px;}
 }
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
   .b1 .m-c-subt {font-size: 22px;}
   .prefooterblock {background-position: -26% 100%, 125% 100%!important;background-size: auto 100%,auto 100%!important;}
 }
@@ -84,15 +98,15 @@
 .b1-content {width: 345px;}
 .b1 .m-c-t {font-size: 29px;line-height: normal;}
 .b1 .m-c-subt {font-size: 23px;}
-.b1 {background-position: bottom right,top right -14%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,57%,32% 44%,77% 70%,auto,66%,51%!important;}
+.b1 {background-position: bottom right,top right -14%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,54% 41%,30% 43%,72% 70%,auto,58%,51%!important;}
 .prefooterblock .mainwrapper {width: 68%;}
 }
 
 @media (max-width: 1300px) {
-.b1 {background-position: bottom right,top right -14%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,58% 42%,33%,77% 70%,auto,66%,51%!important;}
+.b1 {background-position: bottom right,top right -14%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,54% 41%,30% 43%,66% 70%,auto,63%,52%!important;}
 }
 @media (max-width: 1280px) {
-.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,55% 44%,33%,76% 70%,auto,66%,54%!important;}
+.b1 {background-position: bottom right,top right -14%,left 43%,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;background-size: auto,54% 41%,30% 43%,66% 70%,auto,63%,52%!important;}
 .b1-content {padding-top: 13%;}
 .b1 .imgbanner img:nth-child(1) {right: -63%;width: 62%;margin-top: 8% !important;}
 .b2-content .imgmanwrapper {width: 40%;}
