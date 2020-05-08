@@ -269,6 +269,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 /* .success-modal{min-width:450px;max-width:96%;margin:0 auto;width:600px!important} */
 app-confirm .main_header {position: relative;    text-align: center;}
 app-confirm .main_header .mat-card-title{margin-top: 15px; margin-bottom: 0;}
+.textarea.mat-input-element{resize: none;}
 app-confirm .main_header .close {    
   position: absolute;
   top: -8px;
