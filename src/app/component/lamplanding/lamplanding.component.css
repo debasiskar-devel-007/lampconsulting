@@ -57,9 +57,9 @@
 .prefooterblock .contactinfo .mat-list-item a{color:var(--color-link-txt)}
 .prefooterblock .contactinfo .mat-list-item a:hover{color:var(--color-link-txt)}
 .prefooterblock .contactinfo .mat-list-item span{width:26px;height:26px;border-radius:100%;padding:3px;background-color:#333;margin-right:5px}
-.prefooterblock .contactinfo .mat-list-item span .mat-icon{transition:transform 2s,filter 3s ease-in-out}
-.prefooterblock .contactinfo .mat-list-item:hover span .mat-icon{transform:scale(1.2);filter:brightness(100%)}
-.prefooterblock .contactinfo .mat-list-item span .mat-icon{color:#fff;font-size:20px}
+.prefooterblock .contactinfo .mat-list-item span svg{transition:transform 2s,filter 3s ease-in-out}
+.prefooterblock .contactinfo .mat-list-item:hover span svg{transform:scale(1.2);filter:brightness(100%)}
+.prefooterblock .contactinfo .mat-list-item span svg{color:#fff;font-size:20px;fill: currentColor;}
 
 @media (max-width: 1666px) {
 .clientbox .mat-list .mat-list-item {padding: 20px 10px;}
