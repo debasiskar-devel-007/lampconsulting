@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { gsap } from "gsap";
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 declare var $:any;
 
@@ -13,13 +14,17 @@ declare var $:any;
 export class LamplandingComponent implements OnInit {
 
   windowScrolled: boolean;
-  
+  options: FormGroup;
   loading: boolean=false;
-  constructor(public router: Router) { 
-    
+  constructor(public router: Router, public fb:FormBuilder) { 
+    this.options = this.fb.group({
+      name:['', Validators.required],
+      email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
+      phone:['',Validators.required],
+      message:['',Validators.required]
+    })
     
   }
-
   ngOnInit() {
 
     $("#parallaxwrapper").mousemove(function(e) {
@@ -87,6 +92,20 @@ export class LamplandingComponent implements OnInit {
       });
     }
 
+  }
+  
+  contactUs(){
+    console.log('jsgashdgsajg')
+    console.log(this.options.value);
+    let x: any;
+    // use for validation checking
+
+    for (x in this.options.controls) {
+      this.options.controls[x].markAsTouched();
+    }
+  }
+  inputUntouched(val: any) {
+    this.options.controls[val].markAsUntouched();
   }
 
   @HostListener("window:scroll", [])

@@ -280,39 +280,39 @@
                 </mat-card-content>
                 <mat-card-content class="sideblock-row-gen">
                     <div class="example-container">
-                        <form [formGroup]="options">
+                        <form [formGroup]="options" (ngSubmit)="contactUs()">
                              <mat-label>Name <span>*</span></mat-label>
                               <mat-form-field>
-                                <input matInput type="text" formControlName="name" (blur)="inputUntouched(UpdateForm,'name')">
+                                <input matInput type="text" formControlName="name" (blur)="inputUntouched('name')">
                                 <mat-error
-                                  *ngIf="!UpdateForm.controls['name'].valid && UpdateForm.controls['name'].errors.required && UpdateForm.controls['name'].touched">
+                                  *ngIf="!options.controls['name'].valid && options.controls['name'].errors.required && options.controls['name'].touched">
                                   First Name field can not be blank</mat-error>
                               </mat-form-field>
                               <mat-label>Email <span>*</span></mat-label>                
                               <mat-form-field>
-                                <input matInput type="text" formControlName="email" (blur)="inputUntouched(UpdateForm,'email')">
+                                <input matInput type="text" formControlName="email" (blur)="inputUntouched('email')">
                                 <mat-error
-                                  *ngIf="!UpdateForm.controls['email'].valid && UpdateForm.controls['email'].errors.required && UpdateForm.controls['email'].touched">
+                                  *ngIf="!options.controls['email'].valid && options.controls['email'].errors.required && options.controls['email'].touched">
                                   Email field can not be blank</mat-error>
-                                <mat-error *ngIf="!UpdateForm.controls['email'].valid && !UpdateForm.controls['email'].errors.required">Email is not valid</mat-error>
+                                <mat-error *ngIf="!options.controls['email'].valid && !options.controls['email'].errors.required">Email is not valid</mat-error>
                               </mat-form-field>
                              <mat-label>Phone</mat-label>   
                               <mat-form-field>
-                                <input matInput type="text" formControlName="phone" (blur)="inputUntouched(UpdateForm,'phone')">
+                                <input matInput type="text" formControlName="phone" (blur)="inputUntouched('phone')">
                                 <mat-error
-                                  *ngIf="!UpdateForm.controls['phone'].valid && UpdateForm.controls['phone'].errors.required && UpdateForm.controls['phone'].touched">
+                                  *ngIf="!options.controls['phone'].valid && options.controls['phone'].errors.required && options.controls['phone'].touched">
                                   Phone Number field can not be blank</mat-error>
                               </mat-form-field>
                               <mat-label>Message</mat-label> 
                               <mat-form-field>
-                                <input matInput type="text" formControlName="message" (blur)="inputUntouched(UpdateForm,'message')">
+                                <input matInput type="text" formControlName="message" (blur)="inputUntouched('message')">
                                 <mat-error
-                                  *ngIf="!UpdateForm.controls['message'].valid && UpdateForm.controls['message'].errors.required && UpdateForm.controls['message'].touched">
+                                  *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
                                   Message field can not be blank</mat-error>
                               </mat-form-field>
                 
                               <span class="content_header_wrapper">
-                                  <button class="btnblack" mat-raised-button type="button">Submit</button>
+                                  <button class="btnblack" mat-raised-button type="submit">Submit</button>
                              </span>                
                         </form> 
                       </div>
