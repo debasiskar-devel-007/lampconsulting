@@ -88,6 +88,13 @@
   .b1 .m-c-t {font-size: 34px;}
   .prefooterblock {background-position: -24% 100%, 122% 100%!important; background-size: auto 100%,auto 100%!important;}
 }
+@media (max-width: 1430px) {
+.b1 {
+  background-position: bottom right,top right -6%,left,right -12% bottom 17px,top right 46%,bottom left -38%,top left!important;
+  background-size: auto,43% 58%,auto 43%,73% auto,auto,auto 50%,46%!important;
+}
+}
+
 @media (max-width: 1400px) {
   .b1 .m-c-subt {font-size: 22px;}
   .prefooterblock {background-position: -26% 100%, 125% 100%!important;background-size: auto 100%,auto 100%!important;}
