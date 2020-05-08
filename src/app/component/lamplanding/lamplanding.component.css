@@ -47,7 +47,7 @@
 .clientbox .mat-list{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap}
 .clientbox .mat-list .mat-list-item{border:1px solid #e6e6e9;padding:20px 27px;margin:3px;height:100px;flex:1}
 .clientbox .m-c-t2{text-align:center}
-.clientbox p{color:var(--color2-txt);margin-top:0!important;font-family:var(--main-font);font-size:var(--base-menu-font-size);line-height:30px;text-align:center;margin-bottom:20px}
+.clientbox p{color:var(--color2-txt);margin-top:0!important;font-family:var(--main-font);font-size:var(--base-menu-font-size);line-height:30px;text-align:center;margin-bottom:20px;width: 100%;}
 .clientbox .mat-list .mat-list-item .clientboxbox img{transition:transform .5s,filter 1.5s ease-in-out;filter:grayscale(0)}
 .clientbox .mat-list .mat-list-item:hover .clientboxbox img{filter:grayscale(100%);transform:scale(1.1)}
 .footerblock.mat-card{position:relative;display:block;background:#f5f5f7!important;padding-bottom:10px!important;padding-top:10px!important}
