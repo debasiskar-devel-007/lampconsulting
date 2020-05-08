@@ -61,7 +61,12 @@
 .prefooterblock .contactinfo .mat-list-item:hover span .mat-icon{transform:scale(1.2);filter:brightness(100%)}
 .prefooterblock .contactinfo .mat-list-item span .mat-icon{color:#fff;font-size:20px}
 
-
+@media (max-width: 1666px) {
+.clientbox .mat-list .mat-list-item {padding: 20px 10px;}
+}
+@media (max-width: 1600px) {
+.clientbox .mat-list .mat-list-item {padding: 20px 7px;}
+}
 
 @media (max-width: 991px) {
 .content-block {width: 100%;align-items: center;justify-content: center;flex-wrap: wrap;flex-direction: column;}
