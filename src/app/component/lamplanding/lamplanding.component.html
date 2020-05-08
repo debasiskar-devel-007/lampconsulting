@@ -305,7 +305,8 @@
                               </mat-form-field>
                               <mat-label>Message</mat-label> 
                               <mat-form-field>
-                                <input matInput type="text" formControlName="message" (blur)="inputUntouched('message')">
+                                <textarea matInput formControlName="message" (blur)="inputUntouched('message')"></textarea>
+                                <!-- <input matInput type="text" formControlName="message" (blur)="inputUntouched('message')"> -->
                                 <mat-error
                                   *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
                                   Message field can not be blank</mat-error>
