@@ -266,6 +266,36 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 .scroll-to-top .mat-icon{color: #fff;}
 
 
+/* .success-modal{min-width:450px;max-width:96%;margin:0 auto;width:600px!important} */
+app-confirm .main_header {position: relative;    text-align: center;
+}
+app-confirm .main_header .close {    position: absolute;
+  top: 0;
+  right: 0;
+  background: #a43503;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  min-width: 1px;
+  line-height: normal;
+  color: #fff;}
+.cdk-overlay-pane .mat-dialog-container{
+  min-width: 410px;
+  max-width: 96%;
+  margin: 0 auto;
+  max-width: 600px!important;
+  box-shadow: 0 1px 4px 0 rgba(168,168,168,0.5);
+  box-sizing: border-box;
+  transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  padding: 10px!important;
+  border-radius: 0!important;
+  height: inherit!important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #333;}
 
 @media (max-width: 1880px) {
 .clientbox .mainwrapper{width:96%;margin:0 auto;display:block}

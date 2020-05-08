@@ -61,6 +61,8 @@
 .prefooterblock .contactinfo .mat-list-item:hover span .mat-icon{transform:scale(1.2);filter:brightness(100%)}
 .prefooterblock .contactinfo .mat-list-item span .mat-icon{color:#fff;font-size:20px}
 
+
+
 @media (max-width: 991px) {
 .content-block {width: 100%;align-items: center;justify-content: center;flex-wrap: wrap;flex-direction: column;}
 .b4 .b2-bottom .flex-row-gen .content-block .main-row-gen, .b6 .b2-bottom .flex-row-gen .content-block .main-row-gen {-webkit-box-flex: 0;flex: 1 1 100%;padding-right: 0;justify-content: center;text-align: center;}
@@ -106,3 +108,4 @@
 .svg4-p1 {left: 74%;bottom: 10%;width: 70px;}
 .svg4-p3 {left: 73%;bottom: 20px;width: 73px;}
 }
+

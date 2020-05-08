@@ -20,7 +20,7 @@ import { LoaderService } from './services/loader.service';
 import { LoaderInterceptor } from './common/loader.interceptor';
 import { HttpLoaderComponent } from './common/http-loader/http-loader.component';
 
-import { LamplandingComponent } from './component/lamplanding/lamplanding.component';
+import { LamplandingComponent, ConfirmComponent } from './component/lamplanding/lamplanding.component';
 
 
 export function metaFactory(): MetaLoader {
@@ -47,6 +47,7 @@ export function metaFactory(): MetaLoader {
     AppComponent,
     HttpLoaderComponent,
     LamplandingComponent,
+    ConfirmComponent
   ],
   imports: [
     DemoMaterialModule,
@@ -66,13 +67,15 @@ export function metaFactory(): MetaLoader {
     CommonModule,
     TransferHttpCacheModule,
     NgtUniversalModule,
+    
   ],
   providers: [
     CookieService,TestresolveService,ApiService, LoaderService,
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[ ConfirmComponent ]
 })
 export class AppModule {
   constructor(public http: HttpClient, public router: Router) {
