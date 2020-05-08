@@ -122,7 +122,7 @@ export class LamplandingComponent implements OnInit {
           this.successModal = true;
 
           setTimeout(() => {
-            this.successModal = false;
+            // this.successModal = false;
           }, 2000);
 
 

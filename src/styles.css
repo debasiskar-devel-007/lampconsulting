@@ -267,19 +267,21 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 
 
 /* .success-modal{min-width:450px;max-width:96%;margin:0 auto;width:600px!important} */
-app-confirm .main_header {position: relative;    text-align: center;
-}
-app-confirm .main_header .close {    position: absolute;
-  top: 0;
-  right: 0;
+app-confirm .main_header {position: relative;    text-align: center;}
+app-confirm .main_header .mat-card-title{margin-top: 15px; margin-bottom: 0;}
+app-confirm .main_header .close {    
+  position: absolute;
+  top: -8px;
+  right: -8px;
   background: #a43503;
   border-radius: 100px;
-  height: 30px;
-  width: 30px;
+  height: 22px;
+  width: 22px;
   padding: 0px;
   min-width: 1px;
   line-height: normal;
-  color: #fff;}
+  color: #fff;
+}
 .cdk-overlay-pane .mat-dialog-container{
   min-width: 410px;
   max-width: 96%;
@@ -295,7 +297,7 @@ app-confirm .main_header .close {    position: absolute;
   height: inherit!important;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 2px solid #333;}
+  border: 2px solid #777575;}
 
 @media (max-width: 1880px) {
 .clientbox .mainwrapper{width:96%;margin:0 auto;display:block}
