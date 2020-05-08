@@ -7,7 +7,7 @@
 <mat-card class="b1">
     <mat-card-content class="mainwrapper">
         <mat-card-content class="logowrapper">
-            <img src="/assets/images/logo.png">
+            <a [routerLink]="['/']"><img src="../../../assets/images/logo.png"></a>
         </mat-card-content>
         <mat-card-content class="imgbanner">
             <img src="/assets/images/banner-img1.png">
@@ -305,7 +305,8 @@
                               </mat-form-field>
                               <mat-label>Message</mat-label> 
                               <mat-form-field>
-                                <input matInput type="text" formControlName="message" (blur)="inputUntouched('message')">
+                                <textarea matInput formControlName="message" (blur)="inputUntouched('message')"></textarea>
+                                <!-- <input matInput type="text" formControlName="message" (blur)="inputUntouched('message')"> -->
                                 <mat-error
                                   *ngIf="!options.controls['message'].valid && options.controls['message'].errors.required && options.controls['message'].touched">
                                   Message field can not be blank</mat-error>
