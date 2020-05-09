@@ -1,5 +1,5 @@
 .logowrapper{padding-top:40px}
-.b1{width:100%;background-image:url(../images/topbanner-bg5.png),url(../images/topbanner-bg3.png),url(../images/topbanner-bg7.png),url(../images/topbanner-bg4.png),url(../images/topbanner-bg2.png),url(../images/topbanner-bg6.png),url(../images/topbanner-bg1.png),linear-gradient(to right,rgba(230,231,232,1),rgba(230,231,232,0))!important;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat!important;background-position:bottom right,top right,left,right bottom 5px,top right 47%,bottom left -16px,top left!important;margin:0;position:relative;min-height:861px;background-size:auto,auto 45%,auto,58% auto,auto,auto,46%!important}
+.b1{width:100%;background-image:url(../images/topbanner-bg5.svg),url(../images/topbanner-bg3.svg),url(../images/topbanner-bg7.svg),url(../images/topbanner-bg4.svg),url(../images/topbanner-bg2.svg),url(../images/topbanner-bg6.svg),url(../images/topbanner-bg1.svg),linear-gradient(to right,rgba(230,231,232,1),rgba(230,231,232,0))!important;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat!important;background-position:bottom right,top right,left,right bottom 5px,top right 47%,bottom left -16px,top left!important;margin:0;position:relative;min-height:861px;background-size:auto,auto 45%,auto,58% auto,auto,auto,46%!important}
 .b1-content{width:560px;margin:0 auto;padding-top:11%;position:relative;margin-left:33%}
 .b1 .imgbanner{position:absolute;left:80px;top:10px;width:895px}
 .b1 .imgbanner img:nth-child(1){position:absolute;right:-13px}
@@ -25,7 +25,7 @@
 .clientbox .mat-list .mat-list-item .mat-list-item-content{padding:0!important;justify-content:center;height:100%}
 .clientbox .mat-list .mat-list-item .mat-list-item-content img{max-width:inherit}
 
-.prefooterblock{width:100%;background-image:url(../images/pfooter-left-bg.png),url(../images/pfooter-right-bg.png),linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,1))!important;background-repeat:no-repeat,no-repeat!important;background-position:left,right!important;margin:0;position:relative;min-height:470px;background-size:auto 100%,auto 100%!important}
+.prefooterblock{width:100%;background-image:url(../images/pfooter-left-bg.svg),url(../images/pfooter-right-bg.svg),linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,1))!important;background-repeat:no-repeat,no-repeat!important;background-position:left,right!important;margin:0;position:relative;min-height:470px;background-size:auto 100%,auto 100%!important}
 .prefooterblock .content-block{padding-top:30px}
 .prefooterblock .sideblock-row-gen .example-container form{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-direction:row;flex-wrap:wrap}
 .prefooterblock .sideblock-row-gen .example-container form .mat-form-field{width:100%}
