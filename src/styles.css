@@ -329,7 +329,7 @@ p {width: 100%;margin-top: 0 !important;}
 .matbuttoncls{padding:10px 30px!important}
 .innerpagebannerbg .mat-card-subtitle br{display:none}
 
-.b2 .b2-content .coldiv .mat-card {margin: 2% !important;}
+.b2 .b2-content .coldiv .mat-card {margin: 2% !important;flex: 0 0 46%;}
 .contactinfo {flex-direction: column;}
 .contactinfo .mat-list-item {margin-bottom: 18px;}
 .contactinfo .mat-list-item:last-child {margin-bottom: 0;}
