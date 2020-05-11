@@ -260,7 +260,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 100%{transform:translate(32px,-8px) scale(0)} 
 }
 
-.scroll-to-top{position:fixed;bottom:20px;right:30px;z-index:999999;border:none;outline:none;cursor:pointer;padding: 1px;display:block;opacity:0;transition:all .2s ease-in-out;    background-color: #cc4e63;
+.scroll-to-top{position:fixed;bottom:20px;right:30px;z-index:999999;border:none;outline:none;cursor:pointer;padding: 1px;display:block;opacity:0;transition:all .2s ease-in-out;    background-color: #353535;
   width: 30px !important;border-radius: 100% !important;height: 30px !important;color: #fff;border: 2px solid #cdcdcd}
 .show-scrollTop{opacity:1;transition:all .2s ease-in-out}
 .scroll-to-top .mat-icon{color: #fff;}
