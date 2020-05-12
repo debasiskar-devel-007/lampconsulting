@@ -257,7 +257,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 }
 @keyframes drop2 {
 0%{transform:translate(0,0) scale(0.9)}
-100%{transform:translate(32px,-8px) scale(0)}
+100%{transform:translate(32px,-8px) scale(0)} 
 }
 
 .scroll-to-top{position:fixed;bottom:20px;right:30px;z-index:999999;border:none;outline:none;cursor:pointer;padding: 1px;display:block;opacity:0;transition:all .2s ease-in-out;    background-color: #cc4e63;
@@ -323,16 +323,20 @@ p {width: 100%;margin-top: 0 !important;}
 .contactinfo {display: flex !important;justify-content: space-between;align-items: center;width: 100%;}
 .contactinfo .mat-list-item .mat-list-item-content{flex-direction: column !important;}
 .contactinfo .mat-list-item{height: auto !important; }
+.b2 .b2-content p.mat-card-title {max-width: 100%;}
 }
 @media (max-width: 600px) {
 .matbuttoncls{padding:10px 30px!important}
 .innerpagebannerbg .mat-card-subtitle br{display:none}
-.coldiv .column4 .mat-card {flex: 1 0 98% !important;}
-.b2 .b2-content .coldiv .mat-card {margin: 2% !important;}
+
+.b2 .b2-content .coldiv .mat-card {margin: 2% !important;flex: 0 0 46%;}
 .contactinfo {flex-direction: column;}
 .contactinfo .mat-list-item {margin-bottom: 18px;}
 .contactinfo .mat-list-item:last-child {margin-bottom: 0;}
 .scroll-to-top {bottom: 75px;right: 16px;width: 40px;}
 }
 
+@media (max-width: 480px) {
+  .coldiv .column4 .mat-card {flex: 1 0 98% !important;}
+}
 

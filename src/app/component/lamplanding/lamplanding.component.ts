@@ -4,7 +4,8 @@ import { gsap } from "gsap";
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material';
 import { HttpClient } from '@angular/common/http';
-import {HttpService } from '../../services/http.service';
+import { HttpService } from '../../services/http.service';
+import { MetaService } from '@ngx-meta/core';
 
 declare var $:any;
 
@@ -19,7 +20,22 @@ export class LamplandingComponent implements OnInit {
   windowScrolled: boolean;
   options: FormGroup;
   loading: boolean=false;
-  constructor(public router: Router, public fb:FormBuilder,public dialog: MatDialog, public http: HttpClient,public apiService : HttpService) { 
+  constructor(public router: Router, public fb:FormBuilder,public dialog: MatDialog, public http: HttpClient,public apiService : HttpService,private readonly meta: MetaService) { 
+
+    this.meta.setTitle('Lamp Consulting - Landing');
+    this.meta.setTag('og:description', 'consulting, sales organizational management, business management, branding and web development firm');
+    this.meta.setTag('twitter:description', 'consulting, sales organizational management, business management, branding and web development firm');
+
+    this.meta.setTag('og:keyword', 'Lamp Consulting');
+    this.meta.setTag('twitter:keyword', 'Lamp Consulting');
+
+    this.meta.setTag('og:title', 'Lamp Consulting - Landing');
+    this.meta.setTag('twitter:title', 'Lamp Consulting - Landing');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:image', '../../assets/images/logo-fb.jpg');
+    this.meta.setTag('twitter:image', '../../assets/images/logo-twitter.jpg');
+
+
     this.options = this.fb.group({
       name:['', Validators.required],
       email: ['', Validators.compose([Validators.required, Validators.pattern(/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/)])],
