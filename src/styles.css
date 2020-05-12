@@ -318,6 +318,29 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 .scroll-to-top svg{color:#fff;fill: currentColor;}
 
 
+/* modal part for terms and conditions */
+.content_main_wrapper {position: relative; }
+.content_main_wrapper .logoPart{ background: var(--c-t-bg); text-align: center; }
+.content_main_wrapper .logoPart img{ max-width: 100%; }
+.content_main_wrapper .mat-dialog-title {font-family:var(--main-bold-font); color: var(--c-t-primary-btn_title); font-size: 34px; margin-top: 20px; display: block;}
+.content_main_wrapper .mat-typography{ margin: 0; padding: 0;}
+.content_main_wrapper h3{ font-family: var(--main-bold-font); color: #683c45; font-size: 20px; margin-bottom: 10px; position: relative; padding-left: 0; }
+.content_main_wrapper h3::before{ content: ''; position: absolute; width: 10px; height: 10px; background: var(--c-t-primary); left: 3px; top: 8px;
+  transform: rotate(45deg);  }
+.content_main_wrapper p{ font-family: var(--main-font); color: var(--c-t-primary-btn_title); font-size: 16px; line-height: 24px;margin-top: 5px!important;}
+.content_main_wrapper p a{ color: var(--c-t-secondary); }
+.content_main_wrapper p a:focus{outline: none; }
+.content_main_wrapper .mat-list-base{margin-bottom: 16px; line-height: 26px;}
+.content_main_wrapper .mat-list-base .mat-list-item{ height: auto; margin-bottom: 8px;}
+.content_main_wrapper .mat-list-base .mat-list-item span{width: 95px;color: #683c45;font-family: var(--main-bold-font);margin-right: 5px;}
+.content_main_wrapper .mat-list-base .mat-list-item a{ color: var(--c-t-secondary);}
+.content_main_wrapper .action_button{ position: absolute; right: 8px; top: 8px; background: #dbdbdb; color: var(--c-t-bg); min-width: inherit; padding: 0; width: 40px; height: 40px; border-radius: 50%;}
+
+.cdk-overlay-pane.termsconditionModal .mat-dialog-container{max-width: 90% !important;}
+.cdk-overlay-pane.privacyModal .mat-dialog-container{max-width: 90% !important;}
+.privacyModal .mat-dialog-content, .termsconditionModal .mat-dialog-content {overflow: inherit;}
+.content_main_wrapper .mat-list-base .mat-list-item svg{margin-right: 10px;}
+
 /* .success-modal{min-width:450px;max-width:96%;margin:0 auto;width:600px!important} */
 app-confirm .main_header {position: relative;    text-align: center;}
 app-confirm .main_header .mat-card-title{margin-top: 15px; margin-bottom: 0;}
@@ -345,7 +368,7 @@ app-confirm .main_header .close {
   transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
-  padding: 10px!important;
+  padding: 10px 20px!important;
   border-radius: 0!important;
   height: inherit!important;
   margin-top: 20px;
