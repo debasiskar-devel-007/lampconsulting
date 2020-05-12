@@ -44,6 +44,11 @@ export class LamplandingComponent implements OnInit {
     })
     
   }
+
+
+  
+
+
   ngOnInit() {
 
     $("#parallaxwrapper").mousemove(function(e) {
@@ -129,7 +134,9 @@ export class LamplandingComponent implements OnInit {
       // this.apiService.postDatawithoutToken(data,link).subscribe((response:any)=>{
           // console.log("response",response);  
           // if (response.status === 'success'){
-          const dialogRef = this.dialog.open(ConfirmComponent);
+          const dialogRef = this.dialog.open(ConfirmComponent,{
+            panelClass:'successModal'
+          });
           dialogRef.afterClosed().subscribe(result => {
             // console.log(`Dialog result: ${result}`);
           });
@@ -176,6 +183,26 @@ export class LamplandingComponent implements OnInit {
     })();
   }
 
+  privacy() {
+    const dialogRef = this.dialog.open(PrivacyPolicy,{
+      panelClass:'privacyModal'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      //console.log(`Dialog result: ${result}`);
+    });
+
+  }
+  termsandConditions() {
+    const dialogRef = this.dialog.open(TermsAndConditions, {
+      panelClass:'termsconditionModal'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+     // console.log(`Dialog result: ${result}`);
+    });
+  }
+
 }
 
 @Component({
@@ -187,3 +214,17 @@ export class LamplandingComponent implements OnInit {
 export class ConfirmComponent {
 
 }
+
+@Component({
+  selector: 'app-privacypolicy',
+  templateUrl: 'privacypolicy.html',
+  styleUrls: ['./lamplanding.component.css']
+})
+export class PrivacyPolicy { }
+
+@Component({
+  selector: 'app-termsandconditions',
+  templateUrl: 'termsandconditions.html',
+  styleUrls: ['./lamplanding.component.css']
+})
+export class TermsAndConditions { }
