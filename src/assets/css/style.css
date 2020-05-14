@@ -1,4 +1,5 @@
 .logowrapper{padding-top:40px}
+.logowrapper img{max-width: 100%;}
 /* .b1{width:100%;background-image:url(../images/topbanner-bg5.svg),url(../images/topbanner-bg3.svg),url(../images/topbanner-bg7.svg),url(../images/topbanner-bg4.svg),url(../images/topbanner-bg2.svg),url(../images/topbanner-bg6.svg),url(../images/topbanner-bg1.svg),linear-gradient(to right,rgba(230,231,232,1),rgba(230,231,232,0))!important;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat!important;background-position:bottom right,top right,left,right bottom 5px,top right 47%,bottom left -16px,top left!important;margin:0;position:relative;min-height:861px;background-size:auto,auto 45%,auto,58% auto,auto,auto,46%!important} */
 
 .b1{width:100%;background-image:url(../images/topbanner.svg),linear-gradient(to right,rgba(230,231,232,1),rgba(230,231,232,0))!important;background-repeat:no-repeat!important;background-position:top center!important;margin:0;position:relative;min-height:861px;background-size:100% 100%!important}
