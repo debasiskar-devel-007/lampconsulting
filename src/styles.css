@@ -333,7 +333,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 .content_main_wrapper p a:focus{outline: none; }
 .content_main_wrapper .mat-list-base{margin-bottom: 16px; line-height: 26px;}
 .content_main_wrapper .mat-list-base .mat-list-item{ height: auto; margin-bottom: 8px;}
-.content_main_wrapper .mat-list-base .mat-list-item span{width: 95px;color: #683c45;font-family: var(--main-bold-font);margin-right: 5px;}
+.content_main_wrapper .mat-list-base .mat-list-item span{ color: #683c45;font-family: var(--main-bold-font);margin-right: 5px;}
 .content_main_wrapper .mat-list-base .mat-list-item a{ color: var(--c-t-secondary);}
 .content_main_wrapper .action_button{
   position: absolute;
@@ -351,7 +351,7 @@ pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.428
 
 .cdk-overlay-pane.termsconditionModal .mat-dialog-container{overflow-y: scroll !important;overflow: hidden;padding: 10px;}
 .cdk-overlay-pane.privacyModal .mat-dialog-container{overflow-y: scroll !important;overflow: hidden;padding: 10px;}
-.cdk-overlay-pane.successModal .mat-dialog-container{overflow-y: scroll !important;overflow: hidden;padding: 10px;}
+.cdk-overlay-pane.successModal .mat-dialog-container{ overflow: hidden;padding: 10px;}
 .privacyModal .mat-dialog-content, .termsconditionModal .mat-dialog-content {overflow: inherit;}
 .content_main_wrapper .mat-list-base .mat-list-item svg{margin-right: 10px;}
 .cdk-overlay-pane.privacyModal .mat-dialog-container, .cdk-overlay-pane.termsconditionModal, .cdk-overlay-pane.successModal .mat-dialog-container{max-height: 100%;}

@@ -46,7 +46,10 @@ export class LamplandingComponent implements OnInit {
   }
 
 
-  
+  scroll1() { document.querySelector('.b3').scrollIntoView({ behavior: 'smooth', });}
+  scroll2() { document.querySelector('.b4').scrollIntoView({ behavior: 'smooth', });}
+  scroll3() { document.querySelector('.b5').scrollIntoView({ behavior: 'smooth', });}
+  scroll4() { document.querySelector('.b6').scrollIntoView({ behavior: 'smooth', });}
 
 
   ngOnInit() {

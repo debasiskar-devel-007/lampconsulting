@@ -147,5 +147,8 @@
       }
     }
   },
-  "defaultProject": "helios-serverless"
+  "defaultProject": "helios-serverless",
+  "cli": {
+    "analytics": "4bf353eb-4c7a-4059-9ba4-97b4512b64a6"
+  }
 }
