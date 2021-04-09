@@ -36,24 +36,29 @@
             </mat-card-content>
             <mat-card-content class="coldiv">
                 <mat-card-content class="column4">
-                    <mat-card class="animated slideInUp" (click)="scroll1()">
+                    <mat-card (click)="scroll1()">
                         <span class="icon">
-                            <!-- <svg width="170" height="129" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="170" height="129" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g>
                                  <g id="svg_1"/>
                                  <image xlink:href="data:image/png;base64,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" id="svg_2" height="129" width="170" y="0.07813" x="0.3125"/>
                                 </g>
-                            </svg> -->
-                            <span style="position:relative; top:0;left:0; height:129px; width:170px; user-select: none;">
+                            </svg>
+                            <!-- <span style="position:relative; top:0;left:0; height:129px; width:170px; user-select: none;">
                                 <img src="https://all-frontend-assets.s3.amazonaws.com/lamp-consulting/assets/images/icon-feature-1.png">
-                            </span>                            
+                            </span>   -->
+                            <!-- <span style="position: relative;top: 0;left: 0;height: 100%;width: 100%;display: block;">
+                                <svg version="1.1" xmlns="" xmlns:xlink="" style="top:0;left:0; height:100%; width:100%; user-select: none;">
+                                    <image x="0" y="0" width="100%" xlink:href="https://all-frontend-assets.s3.amazonaws.com/lamp-consulting/assets/images/icon-feature-1.svg" id="iconfeature1" />
+                                </svg>
+                            </span> -->
                             <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:relative; top:0;left:0; height:129px; width:170px; user-select: none;">
                             <image x="0" y="0" width="100%" height="100%" xlink:href="https://all-frontend-assets.s3.amazonaws.com/lamp-consulting/assets/images/icon-feature-1.svg" id="tiger" />
                             </svg> -->
                         </span>
                         <mat-card-title>Custom Software Development</mat-card-title>
                     </mat-card>
-                    <mat-card class="animated slideInUp" (click)="scroll2()">
+                    <mat-card (click)="scroll2()">
                         <span class="icon">
                             <svg width="170" height="129" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g>
@@ -64,7 +69,7 @@
                         </span>
                         <mat-card-title>Custom Branding and Design</mat-card-title>
                     </mat-card>
-                    <mat-card class="animated slideInUp" (click)="scroll3()">
+                    <mat-card (click)="scroll3()">
                         <span class="icon">
                             <svg width="170" height="129" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
@@ -77,7 +82,7 @@
                         </span>
                         <mat-card-title>Logo Designs</mat-card-title>
                     </mat-card>
-                    <mat-card class="animated slideInUp" (click)="scroll4()">
+                    <mat-card (click)="scroll4()">
                         <span class="icon">
                             <svg width="170" height="129" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
@@ -92,7 +97,7 @@
                     </mat-card>
                 </mat-card-content>
             </mat-card-content>  
-            <p class="mat-card-title animated slideInUp"><strong>LAMP Consulting</strong> offers Ready-for-immediate-use Custom Software Development services 
+            <p class="mat-card-title"><strong>LAMP Consulting</strong> offers Ready-for-immediate-use Custom Software Development services 
                 that will lend a great deal of value to your business. With our custom ideas and strategies, you will have the necessary 
                 platform and tools to elevate your business to the next level and gain that all-important edge over your competitors in the industry.
                  With <strong>LAMP Consulting</strong>, you get premium quality software and web & mobile solutions for your business needs, <strong>EVERY SINGLE TIME!</strong>
@@ -401,67 +406,67 @@
         <mat-card-title class="m-c-t2">Service Built On Trust</mat-card-title>
         <p>We empower businesses owners through results driven development and design. Here are some of our clients. </p>
         <mat-list>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client1.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client2.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client3.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client4.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client5.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client6.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client7.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client8.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client9.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client10.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client11.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client12.png">
                 </span> 
             </mat-list-item>
-            <mat-list-item class="animated slideInUp"> 
+            <mat-list-item> 
                 <span class="clientboxbox">
                     <img src="/assets/images/img-client13.png">
                 </span> 
