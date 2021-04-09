@@ -23,7 +23,9 @@
 .b2 .b2-content .coldiv .mat-card{flex-direction:column!important;justify-content:center!important;text-align:center;padding:0!important;margin:0 .5%!important;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
 .b2 .b2-content .coldiv .mat-card .icon{padding:0;width:170px;margin:0 auto; cursor: pointer!important;}
 .b2 .b2-content .coldiv .mat-card .icon svg{width:100%;transition:transform .5s ease}
+.b2 .b2-content .coldiv .mat-card .icon span{width:100%;transition:transform .5s ease}
 .b2 .b2-content .coldiv .mat-card:hover svg{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}
+.b2 .b2-content .coldiv .mat-card:hover span{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}
 .b2 .b2-content .coldiv .mat-card p.mat-card-title{transition:transform .5s ease}
 .b2 .b2-content .coldiv .mat-card:hover p.mat-card-title{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}
 
